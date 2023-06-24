@@ -1,5 +1,9 @@
 import '@styles/globals.css'
 
+// components
+import Nav from '@components/Nav'
+import Provider from '@components/Provider'
+
 export const metadata = {
   title: 'Cuefetch',
   description: 'Discover & Share Prompts'
@@ -14,6 +18,7 @@ function RootLayout({ children }) {
             </div>
 
             <main className='app'>
+              <Nav />
                 {children}
             </main>
         </body>
